@@ -1,5 +1,6 @@
 let cardQuote = document.getElementsByClassName('card-quote');
 let cardQuoteTitle = document.getElementsByClassName('card-quote-title');
+let diceButton = document.querySelector('.dice-icon-button');
 
 const fetchAdvice = async () => {
     const res = await fetch("https://api.adviceslip.com/advice");
@@ -11,5 +12,5 @@ const fetchAdvice = async () => {
     cardQuote[0].innerHTML = `"${data.slip.advice}"`;
 }
 
+ diceButton.addEventListener('click', fetchAdvice);
 
-fetchAdvice();

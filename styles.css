@@ -83,4 +83,5 @@ p {
 .dice-icon-button {
     width: 25px;
     height: auto;
+    cursor:pointer;
 }
