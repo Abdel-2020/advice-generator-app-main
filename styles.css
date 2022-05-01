@@ -1,0 +1,86 @@
+/*Import fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
+
+
+
+/*Reset*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*colour variables*/
+
+:root {
+    --Dark-Blue: hsl(218, 23%, 16%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Light-Cyan: hsl(193, 38%, 86%);
+}
+
+
+/*General Styling*/
+
+body {
+    background-color: var(--Dark-Blue);
+    text-align: center;
+}
+
+h1,
+p {
+    font-family: "Manrope";
+}
+
+.card-main {
+    background-color: var(--Dark-Grayish-Blue);
+    margin: 20vh auto;
+    width: 600px;
+    height: 300px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.card-quote-title {
+    margin: 25px 0;
+    text-transform: uppercase;
+    color: var(--Neon-Green);
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.card-quote {
+    color: var(--Light-Cyan);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.pattern-divider-desktop {
+    padding: 50px;
+}
+
+.pattern-divider-mobile {
+    display: none;
+}
+
+.dice-icon-container {
+    position: absolute;
+    top: 460px;
+    background-color: var(--Neon-Green);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding-top: 13px;
+    padding-right: 2px;
+}
+
+.dice-icon-button {
+    width: 25px;
+    height: auto;
+}
