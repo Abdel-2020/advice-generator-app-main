@@ -105,5 +105,15 @@ p {
     }
 
 
+    .pattern-divider-desktop {
+        display: none;
+    }
+    
+    .pattern-divider-mobile {
+        padding:10px;
+        display: block;
+    }
+
+
 
 }
